@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+
+	<style type="text/css"> 
+
+		body {
+			background: #EEE9E9;
+			font-family: 'Raleway';
+			font-weight: 400;
+
+		}
+
+		.ui-slider .ui-slider-handle {
+		  background-repeat: no-repeat;
+		  border:none;
+		  outline:none;
+		  width:800px;
+		  height:40px;
+		  background-size: auto 40px;
+		  margin-left:-400px;
+		}
+
+		.rule {
+		  position: absolute;
+		  top: 0;
+		  right: 55%;
+		  z-index: 10;
+		  height: 300px;
+		  width: auto;
+		  border:none;
+		}
+
+		.ui-slider {
+		  margin: 46px 200px;
+		  border:none;
+		  left: -10%;
+		  width:110%;
+		  background: #EEE9E9;
+
+		}
+
+		#a .ui-slider-handle {
+		  background: url("ruler/03.png");
+		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+		}
+
+		#b .ui-slider-handle {
+		  background: url("ruler/04.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+
+		}
+
+		#c .ui-slider-handle {
+		  background: url("ruler/05.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 43px;
+
+		}
+
+		#d .ui-slider-handle {
+		  background: url("ruler/06.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+		}
+
+		#e .ui-slider-handle {
+		  background: url("ruler/07.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+		}
+
+		#f .ui-slider-handle {
+		  background: url("ruler/08.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+		}
+		#g .ui-slider-handle {
+		  background: url("ruler/09.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+		}
+		#h .ui-slider-handle {
+		  background: url("ruler/10.png");
+  		  background-repeat: no-repeat;
+		  background-size: auto 40px;
+
+		}
+		.square {
+			width: 60px;
+			height: 40px;
+			border: 1px solid #FFFFFF;
+			opacity: 0.5;
+			position: absolute;
+			left:55%;
+			background: #F4F1F1;
+		}
+		.square:hover {
+			transform: scale(1.05,1.05);
+
+		}
+		#quote {
+			position:relative;
+			width:55%;
+			top:10em;
+			float:right;
+			margin: 2em;
+			display:none;
+		}
+		h1 {
+			font-family: 'Raleway';
+			font-size: 36px;
+			font-weight: 400;
+		}
+		nav {
+			position: relative;
+			float: left;
+
+		}
+		footer {
+			position: fixed;
+			font-family: 'Raleway';
+			font-size: 19px;
+			bottom: 2em;
+			left: 2em;
+			width: 60%;
+			text-align: left;
+			max-height: 50%;
+		}
+		footer span {
+			font-size: 30px;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+		a:hover {
+			background:#FFFF00;
+		}
+	</style>
+
+	</head>
+
+<body>
+
+	<section id="ruler">	
+
+		<div class="slider" id="a"></div>
+		<div class='slider' id='b'></div>
+		<div class='slider' id='c'></div>
+		<div class='slider' id='d'></div>
+		<div class='slider' id='e'></div>
+		<div class='slider' id='f'></div>
+		<div class='slider' id='g'></div>
+		<div class='slider' id='h'></div>				
+		<div class='square' style='top:40px'></div>
+		<div class='square' style='top:100px'></div>
+		<div class='square' style='top:160px'></div>
+		<div class='square' style='top:220px'></div>
+		<div class='square' style='top:280px'></div>
+		<div class='square' style='top:340px'></div>
+		<div class='square' style='top:400px'></div>
+		<div class='square' style='top:460px'></div>
+
+	</section>
+
+	<section id="quote">
+		<h1>"They say that every society is three meals away from revolution. Deprive a culture of food for three meals and you'll have anarchy." -Unknown</h1>
+	</section>
+
+	<section id="info">
+			
+		<h1></h1>
+	</section>
+
+	<footer>
+		<p>
+		<a href="book.html"><span>FOODPRINTS</span></a>
+		<br>is about defining the possibilities and mapping the territory for urban renewal. Our premise is that food plays a central role in the functioning of society. Viewing the city as an organism rather than a collection of fragmented parts, this project aims to explore innovative practices and methods relevant to the Stockholm cityscape and its urban planning policy. Biomimicry, future scenario building and systems thinking can help map the behaviour of citizens as a species and compare it to the workings of other organisms capable
+		of resiliently sustaining themselves in their environments. The goal is not just to make Stockholm sustainable or green – it is to inform our collective behaviour with the knowledge of how we can flourish resiliently within the wider landscape. We have also developed a ‘Foodprints toolkit’ to navigate these diverse issues and create a space to discuss food strategies, urban metabolism and resilient futures. Food plays a role as fundamental in this project as it does in our daily lives. We hope that this publication will likewise serve to nourish its readers.
+		<br>
+		<br>
+		<a href="book.html">See the BOOK</a>
+		<br>
+		<br>
+		For more information contact <a href="www.annamariaorru.com">ANNA MARIA ORRU</a>
+	</footer>
+
+	<script>
+
+  	$('.slider').slider();
+
+	</script>
+
+</body>
+</html>

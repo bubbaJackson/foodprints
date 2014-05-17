@@ -1,0 +1,66 @@
+#a .ui-slider-handle {
+  background: url("ruler/3.png");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+#b .ui-slider-handle {
+  background: url("https://dl-web.dropbox.com/get/Public/codepen/ruler/03.png?w=AABDjo1iOU-MY3u6MPvuIJzYqBQmv06iXNkgDlba6E04CA");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+#c .ui-slider-handle {
+  background: url("https://dl-web.dropbox.com/get/Public/codepen/ruler/03.png?w=AABDjo1iOU-MY3u6MPvuIJzYqBQmv06iXNkgDlba6E04CA");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+#d .ui-slider-handle {
+  background: url("https://dl-web.dropbox.com/get/Public/codepen/ruler/03.png?w=AABDjo1iOU-MY3u6MPvuIJzYqBQmv06iXNkgDlba6E04CA");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+#e .ui-slider-handle {
+  background: url("https://dl-web.dropbox.com/get/Public/codepen/ruler/03.png?w=AABDjo1iOU-MY3u6MPvuIJzYqBQmv06iXNkgDlba6E04CA");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+#f .ui-slider-handle {
+  background: url("https://dl-web.dropbox.com/get/Public/codepen/ruler/03.png?w=AABDjo1iOU-MY3u6MPvuIJzYqBQmv06iXNkgDlba6E04CA");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+#a .ui-slider-handle {
+  background: url("https://dl-web.dropbox.com/get/Public/codepen/ruler/03.png?w=AABDjo1iOU-MY3u6MPvuIJzYqBQmv06iXNkgDlba6E04CA");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+}
+
+.ui-slider .ui-slider-handle {
+  height: 50px;
+  width: 700px;
+  border: none;
+  opacity: 0.5;
+}
+
+.rule {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  z-index: 10;
+  height: 300px;
+  width: auto;
+}
+
+.slider {
+  border: 0px;
+  margin: 46px 200px;
+  width: auto;
+}
+.slider:first-child {
+  margin: 43px 100px 0 300px;
+}

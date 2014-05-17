@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.zoomooz.min.js"></script>
+	<script src="js/jquery.infinitescroll.min.js"></script>
+	
+	<style type="text/css">
+
+		body {
+			background: #F4F1F1;
+			font-size: 12px;
+		}
+		#book {
+			width: 95%;
+			margin:auto;
+		}
+		li {
+			list-style: none;
+			float:left;
+			margin:1em;
+		}
+		li img {
+			width:auto;
+			height:35em;
+			box-shadow: 3px 2px 10px #EEE9E9;
+		}
+		li #a {
+			margin: 0 0 0 37em;
+		}
+		li #b {
+			margin: 0 0 0 -2em;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<section id="book" class="scroll">
+		<ul>
+			<li ><img class="zoomTarget" id="a" src="img/001.jpg"><img class="zoomTarget" src="img/002.jpg"></li>
+			<li ><img class="zoomTarget" src="img/003.jpg"></li>
+			<li ><img class="zoomTarget" src="img/004.jpg"></li>
+			<li ><img class="zoomTarget" src="img/005.jpg"></li>
+			<li ><img class="zoomTarget" src="img/006.jpg"></li>
+			<li ><img class="zoomTarget" src="img/007.jpg"></li>
+			<li ><img class="zoomTarget" src="img/008.jpg"></li>
+			<li ><img class="zoomTarget" src="img/009.jpg"></li>
+			<li ><img class="zoomTarget" src="img/010.jpg"></li>
+		</ul>
+	</section>
+
+	<div class="navigation"><a href="2.html"> </a></div>
+
+
+	<script type="text/javascript">
+
+		$('#book').infinitescroll({
+ 
+		    navSelector  : "div.navigation",            
+		                   // selector for the paged navigation (it will be hidden)
+		    nextSelector : "div.navigation a:first",    
+		                   // selector for the NEXT link (to page 2)
+		    itemSelector : "#book ul",          
+		                   // selector for all items you'll retrieve
+		    extraScrollPx: 150,  
+		    animate      : true,   
+		    debug: true
+		  });
+
+
+		$(window).scroll(function() {
+			$('ul li').on('hover',function(e){
+				$(this).zoomTarget();
+			})
+		});
+
+	</script>
+
+
+</body>
+
+
+</html>
